@@ -1,5 +1,5 @@
 // // adding submit events for the form validation
-document.querySelector(".card").addEventListener("submit", function () {
+document.querySelector(".card").addEventListener("submit", function (e) {
   const NameClass = ["invalid-icon", "placeholder--notext"];
   const firstName = document.getElementById("first-name");
   if (firstName.value === "") {
@@ -44,6 +44,7 @@ document.querySelector(".card").addEventListener("submit", function () {
     document.querySelector(".invalid-password").style.display = "none";
     password.classList.remove(...NameClass);
   }
+  e.preventDefault();
 });
 
 // document
