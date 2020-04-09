@@ -1,0 +1,249 @@
+/* Css Resets */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Generic Styling */
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main Container */
+.container {
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* Flex Properties */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  text-align: center;
+}
+
+.main__content__header {
+  /* margin-top: -15rem; */
+  color: #fff;
+}
+.main__content__paragraph {
+  margin-top: 2rem;
+  color: rgba(256, 256, 256, 0.6);
+  font-weight: 600;
+}
+
+/* Form Elements */
+
+.main__form {
+  margin-top: 3rem;
+}
+
+.main__form .lead {
+  padding: 10px;
+  background: hsl(248, 32%, 49%);
+  margin-bottom: 1rem;
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0px 20px 12px -20px hsl(249, 10%, 26%);
+}
+
+.lead span {
+  font-weight: 600;
+}
+
+/* Form card */
+.card {
+  padding: 2rem 0.5rem;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 25px 12px -20px hsl(249, 10%, 26%);
+}
+
+.card input {
+  display: inline-block;
+  width: 80%;
+  margin: 0.8rem 0;
+  padding: 1rem 0.5rem;
+  border: 0.5px solid hsl(249, 10%, 26%);
+  border-radius: 3px;
+  text-align: left;
+  font-weight: 800;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid hsl(248, 32%, 49%);
+}
+/* submit button */
+
+.btn {
+  width: 85%;
+  display: inline-block;
+  font-family: inherit;
+  padding: 1rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: "background" 2s ease-out;
+}
+
+.btn:hover,
+.btn:active {
+  background: hsl(154, 59%, 48%);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.card p {
+  display: inline-block;
+  width: 80%;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.terms--red {
+  color: hsl(0, 100%, 74%);
+}
+
+.right {
+  text-align: right;
+}
+
+/* invalid class */
+.invalid {
+  display: none;
+  color: hsl(0, 100%, 74%);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: end;
+  margin: 0 2rem;
+  padding-right: 1rem;
+  padding-top: 0;
+  font-style: italic;
+}
+
+.invalid-firstname {
+  display: none;
+}
+
+.invalid-lastname {
+  display: none;
+}
+
+.invalid-email {
+  display: none;
+}
+
+.invalid-password {
+  display: none;
+}
+.card .invalid-icon {
+  display: inline-block;
+  border: 1px solid hsl(0, 100%, 74%);
+  background: url(images/icon-error.svg) no-repeat bottom 50% left 95%;
+}
+
+.placeholder--red::-webkit-input-placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+.placeholder--notext::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 57rem) {
+  .container {
+    min-height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* Flex Properties */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main__content {
+    max-width: 40rem;
+    margin-right: 1rem;
+    text-align: left;
+    padding: 0 4rem;
+  }
+  .main__content__header {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .main__content__paragraph {
+    margin-top: 2rem;
+
+    font-weight: 600;
+  }
+  .main__form {
+    margin-top: -4rem;
+    margin-right: 5rem;
+  }
+  .main__form .lead {
+    padding: 20px;
+  }
+  .card {
+    border-radius: 5px;
+    max-width: 1200px;
+  }
+
+  .invalid {
+    display: none;
+    color: hsl(0, 100%, 74%);
+    font-size: 13px;
+    font-weight: 700;
+    /* margin: 0 2rem; */
+    /* padding-right: 1rem; */
+    padding-top: 0;
+    font-style: italic;
+  }
+  .card .invalid-icon {
+    display: inline-block;
+    border: 2px solid hsl(0, 100%, 74%);
+    background: url(images/icon-error.svg) no-repeat bottom 50% left 95%;
+  }
+
+  /* .invalid-firstname {
+    display: none;
+    width: 100%;
+  } */
+}
+
+/*  */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="main__content">
+        <h1 class="main__content__header">Learn to code by watching others</h1>
+        <p class="main__content__paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="main__form">
+        <p class="lead">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+        <form class="card" action="">
+          <input type="text" id="first-name" placeholder="First Name" />
+          <div class="right">
+            <div class="invalid invalid-firstname">
+              First Name cannot be empty
+            </div>
+          </div>
+          <input type="text" id="last-name" placeholder="Last Name" />
+          <div class="right">
+            <div class="invalid invalid-lastname">
+              Last Name cannot be empty
+            </div>
+          </div>
+          <input type="email" id="email" placeholder="Email Address" />
+          <div class="right">
+            <span class="invalid invalid-email">
+              Looks like this is not an email
+            </span>
+          </div>
+          <input type="password " id="password" placeholder="Password" />
+          <div class="right">
+            <div class="invalid invalid-password">Password cannot be empty</div>
+          </div>
+          <button class="btn" type="submit">Claim your free trail</button>
+          <p>
+            <span class="terms--gray"
+              >By clicking the button, you are agreeing to our</span
+            >
+            <span class="terms--red">Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nachappa P R</a>.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
